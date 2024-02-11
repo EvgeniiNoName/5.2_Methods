@@ -42,13 +42,13 @@ test('Тест№10: levelUp увеличивает уровень и измен
 test('Тест№11: Нельзя повысить уровень при здоровье = 0', () => {
   let character = new Character('Ivan', 'Bowman');
   character.health = 0;
-  expect(() => character.levelUp()).toThrowError('Нельзя повысить уровень при здоровье = 0');
+  expect(() => character.levelUp()).toThrow('Нельзя повысить уровень при здоровье = 0');
 });
 
 test('Тест№12: Нельзя повысить уровень при здоровье = 0', () => {
   let character = new Character('Ivan', 'Bowman');
   character.health = 0;
-  expect(() => character.levelUp()).toThrowError('Нельзя повысить уровень при здоровье = 0');
+  expect(() => character.levelUp()).toThrow('Нельзя повысить уровень при здоровье = 0');
 });
 
 test('Тест№12: Урон уменьшает здоровье в зависимости от защиты', () => {
